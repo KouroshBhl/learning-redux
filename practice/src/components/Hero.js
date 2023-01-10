@@ -1,9 +1,12 @@
 import React from 'react';
-import Logo from './Logo';
-import Button from './button';
+import Menu from './Menu';
 
 const Hero = () => {
-  return <header></header>;
+  return (
+    <header>
+      <Menu />
+    </header>
+  );
 };
 
 export default Hero;
