@@ -12,6 +12,7 @@ const Menu = () => {
         <Links />
       </div>
       <div className='right-container'>
+        <a href='#'>Customer Login</a>
         <Button content={'Sign up'} />
       </div>
     </Wrapper>
@@ -21,9 +22,8 @@ const Menu = () => {
 const Wrapper = styled.nav`
   display: flex;
   justify-content: space-between;
-  max-width: 1544px;
   max-height: 45px;
-  margin: 19px auto;
+  margin: 19px 30px 60px 30px;
 
   .left-container,
   .right-container {

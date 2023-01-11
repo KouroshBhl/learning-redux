@@ -18,20 +18,8 @@ const Links = () => {
 };
 
 const Wrapper = styled.ul`
-  list-style: none;
   display: flex;
   gap: 35px;
-
-  li a:link,
-  li a:visited {
-    color: #000;
-    text-decoration: none;
-  }
-  li a:active,
-  li a:hover {
-    color: #000;
-    text-decoration: none;
-  }
 `;
 
 export default Links;
