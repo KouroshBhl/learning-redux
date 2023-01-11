@@ -13,6 +13,8 @@ const BtnWhite = () => {
 
 const Wrapper = styled.a`
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   border: 2px solid #a1a1aa;
   padding: 12px 25px;
@@ -21,6 +23,10 @@ const Wrapper = styled.a`
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   line-height: 24px;
+
+  @media (max-width: 600px) {
+    width: 60%;
+  }
 `;
 
 export default BtnWhite;

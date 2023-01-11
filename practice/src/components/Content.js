@@ -14,8 +14,8 @@ const Content = () => {
 
       <div>
         <h1 className='header'>
-          Turn your visitors into profitable{' '}
-          <span className='bg-color'>business</span>
+          Turn your visitors into profitable
+          <span className='bg-color'> business</span>
         </h1>
       </div>
 
@@ -34,7 +34,7 @@ const Content = () => {
   );
 };
 
-const Wrapper = styled.article`
+const Wrapper = styled.section`
   width: 627px;
   height: 324px;
   margin: 0 auto;
@@ -90,6 +90,15 @@ const Wrapper = styled.article`
       #ff44ec 73.33%,
       #ff675e 99.34%
     );
+  }
+  @media (max-width: 600px) {
+    width: 95%;
+    height: 100%;
+
+    .button-wrapper {
+      flex-direction: column;
+      width: 100%;
+    }
   }
 `;
 

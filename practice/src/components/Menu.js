@@ -1,10 +1,15 @@
 import React from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
+import { FiMenu } from 'react-icons/fi';
 import Button from './Button';
 import Logo from './Logo';
 import Links from './Links';
+import MobileMenu from './MobileMenu';
 
 const Menu = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
   return (
     <Wrapper>
       <div className='left-container'>
@@ -12,8 +17,12 @@ const Menu = () => {
         <Links />
       </div>
       <div className='right-container'>
-        <a href='#'>Customer Login</a>
+        <a href='#' className='mobile'>
+          Customer Login
+        </a>
         <Button content={'Sign up'} />
+        <FiMenu className='hidden menu-btn' onClick={() => setIsMobile(true)} />
+        <MobileMenu mobile={{ isMobile, setIsMobile }} />
       </div>
     </Wrapper>
   );
@@ -31,6 +40,20 @@ const Wrapper = styled.nav`
     align-items: center;
     justify-content: center;
     gap: 40px;
+  }
+
+  @media (max-width: 600px) {
+    .mobile {
+      display: none;
+    }
+    .hidden {
+      display: block;
+    }
+    .menu-btn {
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+    }
   }
 `;
 

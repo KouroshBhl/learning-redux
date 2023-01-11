@@ -31,6 +31,12 @@ const Wrapper = styled.header`
     width: 100%;
     height: auto;
   }
+
+  @media (max-width: 900px) {
+    .imageContainer {
+      width: 100%;
+    }
+  }
 `;
 
 export default Hero;

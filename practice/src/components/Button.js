@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Button = ({ content }) => {
-  return <Btn>{content}</Btn>;
+  return (
+    <Btn className={`${content === 'Sign up' && 'mobile'}`}>{content}</Btn>
+  );
 };
 
 const Btn = styled.button`
@@ -15,6 +17,13 @@ const Btn = styled.button`
   font-weight: 700;
   cursor: pointer;
   line-height: 24px;
+
+  @media (max-width: 600px) {
+    .mobile {
+      display: none;
+    }
+    width: 69%;
+  }
 `;
 
 export default Button;

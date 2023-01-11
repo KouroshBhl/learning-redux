@@ -20,6 +20,10 @@ const Links = () => {
 const Wrapper = styled.ul`
   display: flex;
   gap: 35px;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 export default Links;
