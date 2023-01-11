@@ -12,7 +12,7 @@ const Menu = () => {
         <Links />
       </div>
       <div className='right-container'>
-        <Button />
+        <Button content={'Sign up'} />
       </div>
     </Wrapper>
   );
